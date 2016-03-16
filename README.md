@@ -4,7 +4,7 @@ I created a portfolio site for this project.
 
 ---------------------------------------------------------------------
 ###INSTRUCTIONS / INSTALLATION
-Click index.html or visit the live site [here](shaunc44.github.io/portfolio-site/). Cheers!
+Click index.html or visit the live site [here](http://shaunc44.github.io/portfolio-site/). Cheers!
 
 ---------------------------------------------------------------------
 ###SUPPORT
