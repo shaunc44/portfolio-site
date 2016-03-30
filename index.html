@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Shaun's Portfolio</title>
-        <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet'>
+        <!--<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet'>-->
         <link rel="stylesheet" href="css/bootstrap.css">
 
         <!--<link rel="stylesheet" href="css/styles.css">-->
@@ -427,6 +427,20 @@
 
 
         <!-- Javascript -->
+        <script>
+            var cb = function() {
+                var l = document.createElement('link');
+                l.rel = 'stylesheet';
+                l.href = 'http://fonts.googleapis.com/css?family=Lato:300';
+                var h = document.getElementsByTagName('head')[0];
+                h.parentNode.insertBefore(l, h);
+            };
+            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+            if (raf) raf(cb);
+            else window.addEventListener('load', cb);
+        </script>
+
         <script type="text/javascript" src="js/jquery-latest.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
